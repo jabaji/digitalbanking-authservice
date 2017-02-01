@@ -56,7 +56,7 @@
 	</dependencies>
 
 	<properties>
-		<start-class>com.capg.authservices.AuthServerApp</start-class>
+		<start-class>main.java.com.capg.authservices.AuthServerApp</start-class>
 	</properties>
 
 	<build>
