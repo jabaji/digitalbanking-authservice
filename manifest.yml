@@ -1,5 +1,5 @@
 applications:
-- name: digitalbanking-authservice
+- name: authservice
   buildpack: https://github.com/cloudfoundry/java-buildpack
   memory: 1024M
   instances: 1
