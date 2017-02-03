@@ -1,11 +1,11 @@
 applications:
-- name: authservice
+- name: digitalbanking-authservice
   buildpack: https://github.com/cloudfoundry/java-buildpack
   memory: 1024M
   instances: 1
   env:
     SPRING_PROFILES_ACTIVE: prod, cloudfoundry
-  host: authservice
+  host: digitalbanking-authservice
   disk_quota: 1024M
   services:
   - AuthServiceDb
