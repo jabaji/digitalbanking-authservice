@@ -5,7 +5,7 @@ applications:
   instances: 1
   env:
     SPRING_PROFILES_ACTIVE: prod, cloudfoundry
-  host: digitalbanking-authservice
+  host: authservice
   disk_quota: 1024M
   services:
   - AuthServiceDb
