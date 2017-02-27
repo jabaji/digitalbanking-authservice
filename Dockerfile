@@ -2,7 +2,7 @@ FROM maven
 
 RUN curl -sSL https://github.com/amalgam8/amalgam8/releases/download/v0.4.0/a8sidecar.sh | sh
 
-ENV A8_SERVICE=loansservice:v1
+ENV A8_SERVICE=authservice:v1
 ENV A8_ENDPOINT_PORT=8160
 ENV A8_ENDPOINT_TYPE=http
 ENV A8_REGISTRY_URL=http://ADM-a8-registry.mybluemix.net
