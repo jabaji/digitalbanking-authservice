@@ -20,6 +20,8 @@ RUN cd /digitalbanking-authservice
 
 RUN mvn -f /digitalbanking-authservice/pom.xml clean install -DskipTests
 
+COPY newrelic/ /opt/
+
 EXPOSE 8160
 
-ENTRYPOINT ["a8sidecar", "--register", "--supervise", "java", "-jar", "/digitalbanking-authservice/target/authservice-0.0.1-SNAPSHOT.war"]
+ENTRYPOINT ["a8sidecar", "--register", "--supervise", "java", "-jar", "-Dnewrelic-config-file=/opt/newrelic.yml", "-javaagent:/opt/newrelic.jar", "/digitalbanking-authservice/target/authservice-0.0.1-SNAPSHOT.war"]
