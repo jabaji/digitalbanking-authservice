@@ -12,6 +12,8 @@ import com.capg.authservice.AuthServerApp;
 /**
  * @author Peter Schneider-Manzell
  */
+
+//Testing Comment
 @RunWith(SpringJUnit4ClassRunner.class)
 @SpringApplicationConfiguration(classes = AuthServerApp.class)
 @WebAppConfiguration
