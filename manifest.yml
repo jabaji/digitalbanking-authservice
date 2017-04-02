@@ -7,5 +7,3 @@ applications:
     SPRING_PROFILES_ACTIVE: prod, cloudfoundry
   host: digitalbanking-authservice
   disk_quota: 1024M
-  services:
-  - AuthServiceDb
